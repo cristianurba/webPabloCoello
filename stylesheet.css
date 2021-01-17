@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face{
+  font-family: 'salome';
+  src: url('./fonts/salome-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #312828 !important;
+  color: #f6f6f6 !important;
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 21px;
+}
+
+section {
+  padding: 200px 0;
+}
+
+/* basic settings */
+
+h1,
+.h1 {
+  font-size: 4.625em;
+  line-height: 1.13513514em;
+  margin-top: 0.28378378em;
+  margin-bottom: 0.56756756em;
+  font-family: 'Playfair Display', serif;
+}
+h2,
+.h2 {
+  font-size: 2.75em;
+  line-height: 1.43181818em;
+  margin-top: 0.47727273em;
+  margin-bottom: 0.47727273em;
+  font-family: 'Playfair Display';
+}
+h3,
+.h3 {
+  font-family: 'Inter';
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h4,
+.h4 {
+  font-size: 1em;
+  line-height: 1.3125em;
+  margin-top: 1.3125em;
+  margin-bottom: 0em;
+}
+h5,
+.h5 {
+  font-size: 1em;
+  line-height: 1.3125em;
+  margin-top: 1.3125em;
+  margin-bottom: 0em;
+}
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0em;
+  font-family: 'Inter';
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0em;
+  margin-bottom: 0em!important;
+}
+
+/* Let's make sure all's aligned */
+hr,
+.hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a,
+b,
+i,
+strong,
+em,
+small,
+code {
+  line-height: 0;
+}
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+.bttn {
+  padding: 8px 20px;
+  background: #c39564;
+  border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #f6f6f6;
+  margin: 21px 0;
+}
+
+p{
+  font-size: 18px;
+}
+
+/* hero */
+.hero {
+  background: linear-gradient(
+      0deg,
+      rgba(46, 30, 35, 0.2),
+      rgba(46, 30, 35, 0.2)
+    ),
+    url(images/heroImg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  z-index: 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.hero h1{
+  font-family: 'salome';
+}
+
+.hero h3{
+  font-family: 'Inter';
+}
+
+/* ------------ Navigation ----------------- */
+nav {
+  background: #130f10;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 50px;
+  height: 50px;
+}
+
+.nav-content #nav-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.nav-content #nav-options a {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-right: 20px;
+  color: #f6f6f6; 
+}
+
+/* ------------ SECTIONS ------------ */
+.sections-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-content{
+  margin-bottom: 50px;
+}
+
+.sections{
+  display:flex;
+  flex-direction: row;
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.sections h2{
+  font-family: 'salome';
+}
+
+.imgSection{
+  text-align: center;
+  max-width: 700px;
+}
+
+.imgSection img{
+  max-width: 90%;
+  max-height: 500px;
+  border-radius: 1%;
+}
+
+/*------ ABOUT SECTION ------*/
+
+#about{
+  display: flex;
+  flex-direction: column;
+}
+
+#about img{
+  margin: 0 auto;
+}
+
+/*------ CAROUSEL ------*/
+
+.carousel-inner div{
+  margin: 0 auto;
+  width: 80%;
+}
+
+#carousel{
+  height: 150px;
+}
+
+/* ------ CONTACTO ------*/
+
+#contacto{
+  background: linear-gradient(
+      0deg,
+      rgba(46, 30, 35, 0.6),
+      rgba(46, 30, 35, 0.6)
+    ),
+    url(./images/guitarra.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacto-texto{
+  margin-left: 60px;
+  right: 0;
+}
+
+#contacto div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contacto div .redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contacto a{
+  text-decoration: none;
+  color: #f6f6f6;;
+  font-size: 30px;
+  margin-right: 40px;
+  padding: 10px;
+}
+
+#contacto a i{
+  font-size: 48px;
+}
+
+
+/* ------ OPINIONES ------ */
+
+.date-coment{
+  text-align: end;
+}
+
+
+/* ------------- FOOTER ------------ */
+footer{
+  background-color: black;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  color: #f6f6f6;
+  text-align: center;
+  margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .sections{
+    display: flex;
+    flex-direction: column;
+    padding: 33px;
+  }
+
+  #logo{
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  #nav-options{
+    visibility: hidden;
+  }
+
+  .imgSection img{
+    margin-bottom: 20px; 
+  }
+
+  #contacto{
+    margin-top: 250px;
+  }
+
+  .contacto-texto{
+    margin-left: 0px;
+    padding-top: 100px;
+  }
+
+}
