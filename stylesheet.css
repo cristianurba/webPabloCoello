@@ -359,4 +359,8 @@ footer p{
     padding-top: 100px;
   }
 
+  .carousel-item{
+    padding: 15px;
+  }
+
 }
